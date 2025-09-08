@@ -19,7 +19,7 @@ interface Username {
 type SortOption = 'alphabetical-asc' | 'alphabetical-desc' | 'price-asc' | 'price-desc';
 
 const fetchUsernames = async (): Promise<Username[]> => {
-  const response = await fetch('https://pastebin.com/raw/x5KC6whX');
+  const response = await fetch('https://raw.githubusercontent.com/havenhubb/Haven-Hub/refs/heads/main/Haven%20Users');
   const text = await response.text();
   
   const lines = text.split('\n').filter(line => line.trim());
