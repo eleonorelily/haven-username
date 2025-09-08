@@ -19,7 +19,7 @@ interface Username {
 type SortOption = 'alphabetical-asc' | 'alphabetical-desc' | 'price-asc' | 'price-desc';
 
 const fetchUsernames = async (): Promise<Username[]> => {
-  const response = await fetch('https://raw.githubusercontent.com/zentir0g/ignore/refs/heads/main/users.txt');
+  const response = await fetch('https://pastebin.com/raw/x5KC6whX');
   const text = await response.text();
   
   const lines = text.split('\n').filter(line => line.trim());
